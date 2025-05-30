@@ -1,21 +1,13 @@
 import { Aiboxen } from "./components/Aiboxen";
+import Hero from "./components/Hero";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-32">
-      {/* 1. Hero Section */}
-      <section
-        id="hero"
-        className="min-h-screen flex flex-col items-center justify-center bg-gray-50 text-center px-6"
-      >
-        <h1 className="text-5xl font-bold">Hej, jag är Alain</h1>
-        <p className="text-xl mt-4 text-gray-600">
-          Frontendutvecklare med passion för React & design
-        </p>
-      </section>
+    <main className="flex flex-col gap-32">
+      <Hero />
 
       {/* 2. Projekt Section */}
-      <section id="projects" className="px-6">
+      <section id="projects" className="px-6 bg-slate-100 h-full">
         <h2 className="text-3xl font-semibold mb-8 text-center">
           Mina Projekt
         </h2>
@@ -26,15 +18,23 @@ export default function Home() {
 
       {/* 3. Kontakt Section */}
       <section id="contact" className="bg-gray-100 px-6 py-16 text-center">
-        <h2 className="text-3xl font-semibold mb-6">Kontakta mig</h2>
-        <p className="mb-6">Du kan nå mig via e-post eller LinkedIn!</p>
-        <a
-          href="mailto:alain@example.com"
-          className="text-red-600 hover:underline"
-        >
-          alain@example.com
-        </a>
+        <div className="flex gap-4 mt-6">
+          <a
+            href="mailto:alain@example.com"
+            className="px-5 py-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition"
+          >
+            Kontakta mig
+          </a>
+          <a
+            href="/cv.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-2 border border-red-600 text-red-600 rounded-full hover:bg-red-50 transition"
+          >
+            Ladda ner CV
+          </a>
+        </div>
       </section>
-    </div>
+    </main>
   );
 }

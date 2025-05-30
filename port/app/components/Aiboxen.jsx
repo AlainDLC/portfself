@@ -4,7 +4,14 @@ import { ChatbotIcon } from "./ChatbotIcon";
 import { ChatForm } from "./CHatForm";
 import { ChatMessage } from "./ChatMessage";
 import { companyInfo } from "./companyinfo";
-import { ArrowDown, MessageCircle, X } from "lucide-react";
+import {
+  ArrowDown,
+  AwardIcon,
+  ChartAreaIcon,
+  MessageCircle,
+  RibbonIcon,
+  X,
+} from "lucide-react";
 
 export const Aiboxen = () => {
   const [chatHistory, setChatHistory] = useState([
@@ -72,7 +79,7 @@ export const Aiboxen = () => {
         className=""
       >
         <span className="">
-          <MessageCircle />
+          <AwardIcon />
         </span>
         <span>
           <X />

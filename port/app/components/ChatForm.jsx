@@ -38,27 +38,30 @@ export const ChatForm = ({
           text: `Using the details provided above, please adress this query ${userMessage}`,
         },
       ]),
-      600
+      300
     );
   };
 
   return (
-    <form action="#" className="chat-form" onSubmit={handleFormSubmit}>
-      <input
-        type="text"
-        placeholder="Message..."
-        className="message-input "
-        required
-        ref={inputRef}
-      />
-      <button
-        type="submit"
-        className="flex items-center justify-center h-10 w-10 rounded-full"
-      >
-        <span>
-          <ArrowUp className="h-5 w-5 " />
-        </span>
-      </button>
-    </form>
+    <div>
+      <form action="#" className="chat-form" onSubmit={handleFormSubmit}>
+        <input
+          type="text"
+          placeholder="Message..."
+          className="message-input "
+          required
+          ref={inputRef}
+          id="#"
+        />
+        <button
+          type="submit"
+          className="flex items-center justify-center h-10 w-10 rounded-full"
+        >
+          <span>
+            <ArrowUp className="h-5 w-5 " />
+          </span>
+        </button>
+      </form>
+    </div>
   );
 };

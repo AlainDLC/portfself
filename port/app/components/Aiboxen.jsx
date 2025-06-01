@@ -91,7 +91,7 @@ export const Aiboxen = () => {
         <div className="chat-header">
           <div className="header-info">
             <ChatbotIcon />
-            <h2 className="logo-text">DLC T PIXE SYSTEM</h2>
+            <h2 className="logo-text">AI SUPPORT</h2>
           </div>
           <button
             onClick={() => setShowChatbot((prev) => !prev)}
@@ -104,7 +104,7 @@ export const Aiboxen = () => {
 
         {/* Chatbot Body */}
         <div ref={chatBodyRef} className="chat-body">
-          <div className="message bot-message">
+          <div className="message bot-message ">
             <ChatbotIcon />
             <p className="message-text">
               Hi there! 👋 Welcome. Are you looking for help to grow or improve

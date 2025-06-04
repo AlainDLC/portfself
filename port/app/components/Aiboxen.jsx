@@ -4,14 +4,7 @@ import { ChatbotIcon } from "./ChatbotIcon";
 import { ChatForm } from "./CHatForm";
 import { ChatMessage } from "./ChatMessage";
 import { companyInfo } from "./companyinfo";
-import {
-  ArrowDown,
-  AwardIcon,
-  ChartAreaIcon,
-  MessageCircle,
-  RibbonIcon,
-  X,
-} from "lucide-react";
+import { ArrowDown, AwardIcon, X } from "lucide-react";
 
 export const Aiboxen = () => {
   const [chatHistory, setChatHistory] = useState([
@@ -24,9 +17,18 @@ export const Aiboxen = () => {
   const [showChatBot, setShowChatbot] = useState(false);
   const chatBodyRef = useRef(null);
 
+  useEffect(() => {
+    if (chatBodyRef.current) {
+      chatBodyRef.current.scrollTo({
+        top: chatBodyRef.current.scrollHeight,
+        behavior: "smooth",
+      });
+    }
+  }, [chatHistory]);
+
   const updateHistory = (text, isError = false) => {
     setChatHistory((prev) => [
-      ...prev.filter((msg) => msg.text !== "Thinking...."),
+      ...prev.filter((msg) => msg.text !== "Tänker...."),
       { role: "model", text, isError },
     ]);
   };
@@ -61,15 +63,6 @@ export const Aiboxen = () => {
       updateHistory(error.message, true);
     }
   };
-
-  useEffect(() => {
-    if (chatBodyRef.current) {
-      chatBodyRef.current.scrollTo({
-        top: chatBodyRef.current.scrollHeight,
-        behavior: "smooth",
-      });
-    }
-  }, [chatHistory]);
 
   return (
     <div className={`container ${showChatBot ? "show-chatbot" : ""}`}>

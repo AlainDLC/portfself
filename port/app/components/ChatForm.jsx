@@ -28,7 +28,7 @@ export const ChatForm = ({
           ...history,
           {
             role: "model",
-            text: "Thinking....",
+            text: "Tänker....",
           },
         ]),
       generateBotResponse([
@@ -38,7 +38,7 @@ export const ChatForm = ({
           text: `Using the details provided above, please adress this query ${userMessage}`,
         },
       ]),
-      300
+      100
     );
   };
 

@@ -107,8 +107,9 @@ export const Aiboxen = () => {
           <div className="message bot-message ">
             <ChatbotIcon />
             <p className="message-text">
-              Hi there! 👋 Welcome. Are you looking for help to grow or improve
-              your business with expert frontend or fullstack development?
+              👋 Välkommen! Behöver du hjälp med att växa eller förbättra din
+              verksamhet med expertishjälp inom frontend- eller
+              fullstackutveckling?
             </p>
           </div>
 

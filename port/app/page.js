@@ -37,62 +37,62 @@ export default function Home() {
 
       <section
         id="projects"
-        class="px-6 py-16 bg-gradient-to-br from-slate-100 to-white min-h-screen flex flex-col items-center justify-center"
+        className="px-6 py-16 bg-gradient-to-br from-slate-100 to-white min-h-screen flex flex-col items-center justify-center"
       >
-        <h2 class="text-4xl font-extrabold mb-12 text-center text-gray-800 tracking-tight">
-          My Skills
+        <h2 className="text-4xl font-extrabold mb-40 text-center text-gray-800 tracking-tight">
+          TECK STACK
         </h2>
-        <div class="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
-          <div class="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <GithubDark class="h-10 w-10 text-gray-700" />
+        <div className="flex flex-wrap justify-center gap-6 max-w-2xl mt-2">
+          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <GithubDark className="h-10 w-10 text-gray-700" />
           </div>
-          <div class="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <JavaScript class="h-10 w-10 text-yellow-500" />
+          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <JavaScript className="h-10 w-10 text-yellow-500" />
           </div>
-          <div class="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <ReactDark class="h-10 w-10 text-blue-500" />
+          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <ReactDark className="h-10 w-10 text-blue-500" />
           </div>
-          <div class="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <NextJSDark class="h-10 w-10 text-gray-800" />
+          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <NextJSDark className="h-10 w-10 text-gray-800" />
           </div>
-          <div class="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <BashDark class="h-10 w-10 text-green-600" />
+          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <BashDark className="h-10 w-10 text-green-600" />
           </div>
-          <div class="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <CSS class="h-10 w-10 text-blue-600" />
+          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <CSS className="h-10 w-10 text-blue-600" />
           </div>
-          <div class="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <DotNet class="h-10 w-10 text-purple-700" />
+          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <DotNet className="h-10 w-10 text-purple-700" />
           </div>
-          <div class="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <Git class="h-10 w-10 text-orange-600" />
+          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <Git className="h-10 w-10 text-orange-600" />
           </div>
-          <div class="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <HTML class="h-10 w-10 text-red-500" />
+          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <HTML className="h-10 w-10 text-red-500" />
           </div>
-          <div class="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <JavaDark class="h-10 w-10 text-red-700" />
+          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <JavaDark className="h-10 w-10 text-red-700" />
           </div>
-          <div class="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <Jest class="h-10 w-10 text-red-600" />
+          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <Jest className="h-10 w-10 text-red-600" />
           </div>
-          <div class="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <MongoDB class="h-10 w-10 text-green-700" />
+          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <MongoDB className="h-10 w-10 text-green-700" />
           </div>
-          <div class="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <Postman class="h-10 w-10 text-orange-400" />
+          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <Postman className="h-10 w-10 text-orange-400" />
           </div>
-          <div class="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <Redux class="h-10 w-10 text-purple-600" />
+          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <Redux className="h-10 w-10 text-purple-600" />
           </div>
-          <div class="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <SupabaseDark class="h-10 w-10 text-green-500" />
+          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <SupabaseDark className="h-10 w-10 text-green-500" />
           </div>
-          <div class="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <VSCodeDark class="h-10 w-10 text-blue-400" />
+          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <VSCodeDark className="h-10 w-10 text-blue-400" />
           </div>
-          <div class="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <VercelDark class="h-10 w-10 text-black" />
+          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+            <VercelDark className="h-10 w-10 text-black" />
           </div>
         </div>
       </section>

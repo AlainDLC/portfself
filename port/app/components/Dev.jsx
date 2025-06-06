@@ -1,5 +1,5 @@
+import { useAnimations, useFBX, useGLTF } from "@react-three/drei";
 import React, { useEffect, useRef } from "react";
-import { useAnimations, useFBX, useGLTF, Html } from "@react-three/drei";
 
 export function Dev({ animation, ...props }) {
   const group = useRef();

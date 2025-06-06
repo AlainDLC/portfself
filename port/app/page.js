@@ -5,6 +5,8 @@ import Hero from "./components/Hero";
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Experience } from "./components/Experience";
+import { Skills } from "./components/Skills";
+import { Experience2 } from "./components/Experience2";
 
 export default function Home() {
   return (
@@ -13,7 +15,7 @@ export default function Home() {
 
       {/* 2. Projekt Section */}
       <section id="projects" className="px-6 bg-slate-100 h-full">
-        <h2 className="text-3xl font-semibold mb-8 text-center">
+        <h2 className="text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center w-fit mx-auto">
           Mina Projekt
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
@@ -27,19 +29,18 @@ export default function Home() {
       >
         <div className="flex items-center max-w-6xl w-full px-6 gap-10">
           {/* Textdelen med centrerad text */}
-          <div className="flex-1 flex justify-center">
-            <h2 className="text-4xl font-extrabold text-gray-800 tracking-tight text-center mb-60">
+          <div className="flex-1 flex flex-col justify-center items-center">
+            <h2 className=" mb-30 text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center w-fit mx-auto">
               TECH STACK
             </h2>
+
+            <Skills />
           </div>
 
           {/* Bilddelen */}
           <div className="w-96 h-96">
-            <Canvas
-              className="w-full h-full"
-              camera={{ position: [2, 2, 2], fov: 40 }}
-            >
-              <ambientLight intensity={4} />
+            <Canvas className="w-full h-full">
+              <ambientLight intensity={3} />
               <Suspense fallback={null}>
                 <Experience />
               </Suspense>

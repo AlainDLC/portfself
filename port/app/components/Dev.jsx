@@ -47,7 +47,7 @@ export function Dev({ animation, ...props }) {
 
   return (
     <group {...props} dispose={null} ref={group}>
-      <group rotation-x={-Math.PI / 2.2}>
+      <group rotation-x={-Math.PI / 2.3}>
         <primitive object={nodes.Hips} />
 
         <skinnedMesh

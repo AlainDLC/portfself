@@ -1,24 +1,10 @@
+"use client";
 import { Aiboxen } from "./components/Aiboxen";
 import Hero from "./components/Hero";
-import {
-  BashDark,
-  CSS,
-  DotNet,
-  Git,
-  GithubDark,
-  HTML,
-  JavaDark,
-  JavaScript,
-  Jest,
-  MongoDB,
-  NextJSDark,
-  Postman,
-  ReactDark,
-  Redux,
-  SupabaseDark,
-  VercelDark,
-  VSCodeDark,
-} from "@fdorantesm/react-skill-icons";
+
+import React, { Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import { Experience } from "./components/Experience";
 
 export default function Home() {
   return (
@@ -37,62 +23,27 @@ export default function Home() {
 
       <section
         id="projects"
-        className="px-6 py-16 bg-gradient-to-br from-slate-100 to-white min-h-screen flex flex-col items-center justify-center"
+        className="px-2 py-10 bg-gradient-to-br from-slate-100 to-white min-h-screen flex flex-col items-center justify-center"
       >
-        <h2 className="text-4xl font-extrabold mb-40 text-center text-gray-800 tracking-tight">
-          TECK STACK
-        </h2>
-        <div className="flex flex-wrap justify-center gap-6 max-w-2xl mt-2">
-          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <GithubDark className="h-10 w-10 text-gray-700" />
+        <div className="flex items-center max-w-6xl w-full px-6 gap-10">
+          {/* Textdelen med centrerad text */}
+          <div className="flex-1 flex justify-center">
+            <h2 className="text-4xl font-extrabold text-gray-800 tracking-tight text-center mb-60">
+              TECH STACK
+            </h2>
           </div>
-          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <JavaScript className="h-10 w-10 text-yellow-500" />
-          </div>
-          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <ReactDark className="h-10 w-10 text-blue-500" />
-          </div>
-          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <NextJSDark className="h-10 w-10 text-gray-800" />
-          </div>
-          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <BashDark className="h-10 w-10 text-green-600" />
-          </div>
-          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <CSS className="h-10 w-10 text-blue-600" />
-          </div>
-          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <DotNet className="h-10 w-10 text-purple-700" />
-          </div>
-          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <Git className="h-10 w-10 text-orange-600" />
-          </div>
-          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <HTML className="h-10 w-10 text-red-500" />
-          </div>
-          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <JavaDark className="h-10 w-10 text-red-700" />
-          </div>
-          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <Jest className="h-10 w-10 text-red-600" />
-          </div>
-          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <MongoDB className="h-10 w-10 text-green-700" />
-          </div>
-          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <Postman className="h-10 w-10 text-orange-400" />
-          </div>
-          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <Redux className="h-10 w-10 text-purple-600" />
-          </div>
-          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <SupabaseDark className="h-10 w-10 text-green-500" />
-          </div>
-          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <VSCodeDark className="h-10 w-10 text-blue-400" />
-          </div>
-          <div className="p-3 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-            <VercelDark className="h-10 w-10 text-black" />
+
+          {/* Bilddelen */}
+          <div className="w-96 h-96">
+            <Canvas
+              className="w-full h-full"
+              camera={{ position: [2, 2, 2], fov: 40 }}
+            >
+              <ambientLight intensity={4} />
+              <Suspense fallback={null}>
+                <Experience />
+              </Suspense>
+            </Canvas>
           </div>
         </div>
       </section>

@@ -19,8 +19,11 @@ const Hero = () => {
           Fullstack Developer Specializing in Frontend
         </p>
         <p className="text-sm text-gray-500 mt-4 max-w-xl">
-          Jag bygger moderna, responsiva och användarvänliga webblösningar.
-          Passionerad över teknik, samarbete och ständig utveckling.
+          Jag designar och implementerar användarvänliga och responsiva
+          gränssnitt som fascinerar och engagerar. Min entusiasm för frontend
+          kompletteras av en bred förståelse för hela stacken, vilket gör att
+          jag kan bygga robusta och skalbara webblösningar. Ständig utveckling
+          och samarbete är kärnan i mitt arbete.
         </p>
       </div>
     </section>

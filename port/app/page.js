@@ -6,7 +6,8 @@ import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Experience } from "./components/Experience";
 import { Skills } from "./components/Skills";
-import { Experience2 } from "./components/Experience2";
+import { Flip } from "./components/Flip";
+import { Recards } from "./components/Recards";
 
 export default function Home() {
   return (
@@ -52,7 +53,7 @@ export default function Home() {
           Recomendationer
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
-          lägg Cards som man kan flippa
+          <Recards />
         </div>
       </section>
 

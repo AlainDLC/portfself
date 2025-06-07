@@ -17,21 +17,23 @@ export const Flip = ({ name, title, description, footer, links, stars }) => {
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
       {/* FRONT */}
       <div onClick={() => setIsFlipped(true)} className="cursor-pointer">
-        <Card>
+        <Card className="shadow-md">
           <CardHeader>
-            <div className="flex flex-col gap-1">
-              <CardTitle>{name}</CardTitle>
-              <CardDescription>{title}</CardDescription>
-              <div className="text-yellow-500 text-lg">
-                {"⭐️".repeat(stars)}
-              </div>
-            </div>
+            <CardTitle>
+              <p className="ml-1">{name} </p>
+            </CardTitle>
+            <CardDescription>
+              {" "}
+              <p className="ml-1">{title} </p>
+            </CardDescription>
+            <p className="">{"⭐️".repeat(stars)}</p>
           </CardHeader>
           <CardContent>
-            <p>{description}</p>
+            <p className="ml-1">{description} </p>
           </CardContent>
           <CardFooter>
             <p>{footer}</p>
+            <p className="ml-2">➡️</p>
           </CardFooter>
         </Card>
       </div>
@@ -59,7 +61,7 @@ export const Flip = ({ name, title, description, footer, links, stars }) => {
             </ul>
           </CardContent>
           <CardFooter>
-            <p>Klicka för att vända tillbaka</p>
+            <p>⬅️</p>
           </CardFooter>
         </Card>
       </div>

@@ -50,9 +50,9 @@ export default function Home() {
 
       <section id="recommends" className="px-6 bg-slate-100 h-full">
         <h2 className=" py-6 text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center w-fit mx-auto">
-          Recomendationer
+          Rekommendationer
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="py-4 ">
           <Recards />
         </div>
       </section>

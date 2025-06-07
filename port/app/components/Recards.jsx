@@ -13,8 +13,8 @@ const recommendations = [
     ],
   },
   {
-    name: "Jonas Ekberg",
-    title: "Produktägare, Yoin",
+    name: "Jonas Templestein",
+    title: "CTO, Monzo",
     description: "Levererar alltid på hög nivå och håller deadlines.",
     footer: "Bästa konsulten!",
     stars: 5,

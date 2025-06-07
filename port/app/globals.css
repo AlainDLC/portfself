@@ -72,11 +72,8 @@
 .chat-header button:hover {
   background: #eb0606;
 }
-.chatbot-toogler button:hover {
-  background: #b08f8f;
-}
-.container #chatbot-toogler button:hover {
-  background: #b08f8f;
+#chatbot-toogler button:hover {
+  background: #2ba606;
 }
 
 .chat-body {
@@ -207,6 +204,10 @@
 #chatbot-toogler span {
   position: absolute;
   color: #fff;
+}
+
+#chatbot-toogler:hover {
+  background-color: #eb0606; /* Välj vilken färg du vill här */
 }
 
 #chatbot-toogler span:last-child,

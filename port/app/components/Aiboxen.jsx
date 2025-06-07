@@ -69,9 +69,8 @@ export const Aiboxen = () => {
       <button
         onClick={() => setShowChatbot((prev) => !prev)}
         id="chatbot-toogler"
-        className=""
       >
-        <span className="">
+        <span>
           <AwardIcon />
         </span>
         <span>
@@ -84,7 +83,7 @@ export const Aiboxen = () => {
         <div className="chat-header">
           <div className="header-info">
             <ChatbotIcon />
-            <h2 className="logo-text">AI SUPPORT</h2>
+            <h2 className="logo-text">Ai-agent</h2>
           </div>
           <button
             onClick={() => setShowChatbot((prev) => !prev)}

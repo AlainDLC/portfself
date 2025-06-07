@@ -26,19 +26,29 @@ export default function Home() {
 
       <section
         id="teck"
-        className=" bg-gradient-to-br from-slate-100 to-white min-h-screen flex flex-col items-center py-6"
+        className="bg-gradient-to-br from-slate-100 to-white min-h-screen flex flex-col items-center py-12 px-4"
       >
-        <h2 className=" mb-30 text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center w-fit mx-auto">
+        <h2 className="mb-8 text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center">
           TECH STACK
         </h2>
-        <div className="flex items-center max-w-6xl w-full px-6 ">
-          <div className="flex-1 flex flex-col justify-center items-center ">
+
+        <p className="text-sm text-slate-500 max-w-3xl text-center leading-relaxed ">
+          Detta är min teknikstack som jag har specialiserat mig på.
+          <br />
+          Jag är också anpassningsbar och kan snabbt lära mig nya tekniker som
+          passar just ert företag.
+          <br />
+          En beskrivning visas när du hovrar över någon av skillsen.
+        </p>
+
+        <div className="flex flex-col md:flex-row items-center max-w-6xl w-full px-6 gap-12">
+          <div className="flex-1 flex flex-col justify-center items-center">
             <Skills />
           </div>
 
           {/* Bilddelen */}
-          <div className="w-96 h-96">
-            <Canvas className="ml-32">
+          <div className="w-72 h-72 md:w-96 md:h-96">
+            <Canvas className="ml-0 md:ml-32">
               <ambientLight intensity={3} />
               <Suspense fallback={null}>
                 <Experience />
@@ -47,7 +57,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section id="recommends" className="px-6 bg-slate-100 h-full">
         <h2 className=" py-6 text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center w-fit mx-auto">
           Rekommendationer

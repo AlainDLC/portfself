@@ -8,7 +8,7 @@ export const Skill = ({ source, alt, title }) => {
       "
     >
       <img src={source} alt={alt} className="h-16 w-16 mb-2" />
-      <p className="text-center text-gray-700 font-semibold">{title}</p>
+      <p className="text-center text-black font-semibold">{title}</p>
     </div>
   );
 };

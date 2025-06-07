@@ -10,8 +10,8 @@ export const Experience = () => {
      */
 
   return (
-    <group scale={[4, 4, 4]}>
-      <Dev position={[-1, -1, -2]} animation={animation} />
+    <group scale={[3, 3, 3]}>
+      <Dev position={[-1, -1, -1]} animation={animation} />
     </group>
   );
 };

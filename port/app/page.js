@@ -14,8 +14,8 @@ export default function Home() {
       <Hero />
 
       {/* 2. Projekt Section */}
-      <section id="projects" className="px-6 bg-slate-100 h-full">
-        <h2 className="text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center w-fit mx-auto">
+      <section id="projects" className=" bg-slate-100 h-full">
+        <h2 className=" py-6 text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center w-fit mx-auto">
           Mina Projekt
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
@@ -24,28 +24,35 @@ export default function Home() {
       </section>
 
       <section
-        id="projects"
-        className="px-2 py-10 bg-gradient-to-br from-slate-100 to-white min-h-screen flex flex-col items-center justify-center"
+        id="teck"
+        className=" bg-gradient-to-br from-slate-100 to-white min-h-screen flex flex-col items-center py-6"
       >
-        <div className="flex items-center max-w-6xl w-full px-6 gap-10">
-          {/* Textdelen med centrerad text */}
-          <div className="flex-1 flex flex-col justify-center items-center">
-            <h2 className=" mb-30 text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center w-fit mx-auto">
-              TECH STACK
-            </h2>
-
+        <h2 className=" mb-30 text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center w-fit mx-auto">
+          TECH STACK
+        </h2>
+        <div className="flex items-center max-w-6xl w-full px-6 ">
+          <div className="flex-1 flex flex-col justify-center items-center ">
             <Skills />
           </div>
 
           {/* Bilddelen */}
           <div className="w-96 h-96">
-            <Canvas className="w-full h-full">
+            <Canvas className="ml-32">
               <ambientLight intensity={3} />
               <Suspense fallback={null}>
                 <Experience />
               </Suspense>
             </Canvas>
           </div>
+        </div>
+      </section>
+
+      <section id="recommends" className="px-6 bg-slate-100 h-full">
+        <h2 className=" py-6 text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center w-fit mx-auto">
+          Recomendationer
+        </h2>
+        <div className="grid md:grid-cols-3 gap-8">
+          lägg Cards som man kan flippa
         </div>
       </section>
 

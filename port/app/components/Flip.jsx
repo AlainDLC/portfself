@@ -23,7 +23,6 @@ export const Flip = ({ name, title, description, footer, links, stars }) => {
               <p className="ml-1">{name} </p>
             </CardTitle>
             <CardDescription>
-              {" "}
               <p className="ml-1">{title} </p>
             </CardDescription>
             <p className="">{"⭐️".repeat(stars)}</p>

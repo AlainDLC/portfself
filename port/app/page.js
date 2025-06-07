@@ -52,8 +52,24 @@ export default function Home() {
         <h2 className=" py-6 text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center w-fit mx-auto">
           Rekommendationer
         </h2>
-        <div className="py-4 ">
+        <div className="py-2 flex  gap-6">
           <Recards />
+
+          <p className="flex-1 text-xl bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-left w-fit mx-auto ">
+            Tillsammans tar vi fram din affärsidé och bygger smarta,
+            skräddarsydda tekniska lösningar.
+            <br />
+            Jag erbjuder expertis inom LMS för effektiv onboarding och
+            utbildning.
+            <br />
+            Med avancerad AI som RAG och prompt coaching maximerar vi värdet av
+            din data.
+            <br />
+            Jag utvecklar även anpassade chatbotar och AI-agenter som stärker
+            kundrelationer.
+            <br />
+            Låt oss skapa lösningar som gör skillnad för ditt företag.
+          </p>
         </div>
       </section>
 

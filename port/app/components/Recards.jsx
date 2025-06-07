@@ -46,7 +46,7 @@ const recommendations = [
 
 export const Recards = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div className="grid grid-cols-2 sm:grid-cols-2 max-w-[650px] gap-8 ">
       {recommendations?.map((rec, index) => (
         <Flip key={index} {...rec} />
       ))}

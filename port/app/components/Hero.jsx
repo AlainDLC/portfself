@@ -13,17 +13,17 @@ const Hero = () => {
         />
       </div>
 
-      <div className="ml-110 mt-10 text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent">
+      <div className="ml-110 mt-10 text-4xl font-bold bg-gradient-to-r from-red-600 via-black  to-black bg-clip-text text-transparent">
         <h1 className="text-4xl md:text-5xl font-bold">Alain De La Cuadra</h1>
         <p className="text-lg  mt-2">
           Fullstack Developer Specializing in Frontend
         </p>
         <p className="text-sm  mt-4 max-w-xl">
-          Jag designar och implementerar användarvänliga och responsiva
-          gränssnitt som fascinerar och engagerar. Min entusiasm för frontend
-          kompletteras av en bred förståelse för hela stacken, vilket gör att
-          jag kan bygga robusta och skalbara webblösningar. Ständig utveckling
-          och samarbete är kärnan i mitt arbete.
+          Designar och implementerar användarvänliga och responsiva gränssnitt
+          som fascinerar och engagerar. Min entusiasm för frontend kompletteras
+          av en bred förståelse för hela stacken, vilket gör att jag kan bygga
+          robusta och skalbara webblösningar. Ständig utveckling och samarbete
+          är kärnan i mitt arbete.
         </p>
       </div>
     </section>

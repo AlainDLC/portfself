@@ -1,3 +1,4 @@
+"use client";
 import { useAnimations, useFBX, useGLTF } from "@react-three/drei";
 import React, { useEffect, useRef } from "react";
 
@@ -13,12 +14,12 @@ export function Dev({ animation, ...props }) {
   const { animations: sillyAnimation } = useFBX("animations/Silly.fbx");
   const { animations: saluteAnimation } = useFBX("animations/Salute.fbx");
 
-  typeAnimation[0].name = "Typing";
-  pushAnimation[0].name = "Push";
-  salsa1Animation[0].name = "Salsa1";
-  salsa2Animation[0].name = "Salsa2";
-  sillyAnimation[0].name = "Silly";
-  saluteAnimation[0].name = "Salute";
+  typeAnimation[0].name = "Kodar";
+  pushAnimation[0].name = "Tränar";
+  salsa1Animation[0].name = "Bachata";
+  salsa2Animation[0].name = "Salsa";
+  sillyAnimation[0].name = "Helg";
+  saluteAnimation[0].name = "Redo";
 
   const allAnimations = [
     ...typeAnimation,

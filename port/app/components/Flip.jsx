@@ -32,7 +32,7 @@ export const Flip = ({ name, title, description, footer, links, stars }) => {
           </CardContent>
           <CardFooter>
             <p>{footer}</p>
-            <p className="ml-2">➡️</p>
+            <p className="ml-2">➡️ lägg till en pulserande animering pil</p>
           </CardFooter>
         </Card>
       </div>

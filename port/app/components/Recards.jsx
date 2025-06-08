@@ -20,7 +20,7 @@ const recommendations = [
     stars: 5,
     links: [
       { label: "Twitter", href: "https://twitter.com/jonas" },
-      { label: "Portfolio", href: "https://jonas.dev" },
+      { label: "Github", href: "https://github.com/jonastemplestein" },
     ],
   },
   {
@@ -28,7 +28,7 @@ const recommendations = [
     title: "Senior Dev, Fiwe",
     description: "Alain är snabb, smart och bra på AI-integrationer.",
     footer: "En tillgång för varje team.",
-    stars: 5,
+    stars: 10,
     links: [{ label: "LinkedIn", href: "https://linkedin.com/in/fatima" }],
   },
   {

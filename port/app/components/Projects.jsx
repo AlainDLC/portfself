@@ -87,7 +87,7 @@ export const Projects = () => {
         <CardHeader>
           <CardTitle>LMS System</CardTitle>
           <CardDescription>
-            En lärplattform byggd i Next.js – responsiv och skalbar.
+            Online kurs byggd i Next.js – responsiv och skalbar.
           </CardDescription>
         </CardHeader>
         <CardContent>

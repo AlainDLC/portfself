@@ -15,8 +15,21 @@ import { Projects } from "./components/Projects";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-32">
+    <main className="flex flex-col gap-40">
       <Hero />
+      <div className="text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center w-fit mx-auto -mt-32">
+        <h1 className="text-4xl md:text-5xl font-bold">Alain De La Cuadra</h1>
+        <p className="text-lg mt-2">
+          Fullstack Developer Specializing in Frontend
+        </p>
+        <p className="text-sm mt-4 max-w-xl">
+          Designar och implementerar användarvänliga och responsiva gränssnitt
+          som fascinerar och engagerar. Min entusiasm för frontend kompletteras
+          av en bred förståelse för hela stacken, vilket gör att jag kan bygga
+          robusta och skalbara webblösningar. Ständig utveckling och samarbete
+          är kärnan i mitt arbete.
+        </p>
+      </div>
 
       {/* 2. Projekt Section */}
       <section

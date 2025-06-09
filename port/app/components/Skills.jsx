@@ -7,15 +7,15 @@ import {
 
 export const Skills = () => {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 ">
+    <div className="grid grid-cols-6 gap-4  p-10 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
       {skillsData.map((skill) => (
         <HoverCard key={skill.alt}>
-          <HoverCardTrigger className="flex justify-center">
+          <HoverCardTrigger className="flex justify-center items-center w-full h-full">
             <Skill source={skill.source} alt={skill.alt} title={skill.title} />
           </HoverCardTrigger>
 
-          <HoverCardContent className="bg-white shadow-md" sideOffset={10}>
-            <span className="text-sm text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-black  to-black  ">
+          <HoverCardContent className="bg-white shadow-md " sideOffset={-30}>
+            <span className="text-sm text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-black to-black">
               {skill.description}
             </span>
           </HoverCardContent>

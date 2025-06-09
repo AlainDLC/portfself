@@ -2,7 +2,6 @@
 import { Aiboxen } from "./components/Aiboxen";
 import Hero from "./components/Hero";
 
-import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 
 import { Skills } from "./components/Skills";
@@ -12,10 +11,11 @@ import { AnimationProvider } from "./components/AnimationContext";
 import { Experience3D } from "./components/Experience3D";
 import { AnimationControls } from "./components/AnimationControls";
 import { Projects } from "./components/Projects";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-40">
+    <main className="flex flex-col  h-screen gap-30">
       <Hero />
       <div className="text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center w-fit mx-auto -mt-32">
         <h1 className="text-4xl md:text-5xl font-bold">Alain De La Cuadra</h1>
@@ -116,7 +116,10 @@ export default function Home() {
       </section>
 
       {/* 3. Kontakt Section */}
-      <section id="contact" className="bg-gray-100 px-6 py-16 text-center">
+      <section
+        id="contact"
+        className="bg-gradient-to-br from-slate-100 to-white  px-6 py-16 text-center"
+      >
         <div className="flex gap-4 mt-6">
           <a
             href="mailto:frontend.alain.dlc@outlook.com"
@@ -125,14 +128,13 @@ export default function Home() {
             Kontakta mig
           </a>
           <a
-            href="/cv.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-5 py-2 border border-red-600 text-red-600 rounded-full hover:bg-red-50 transition"
+            href="https://www.linkedin.com/in/alain-de-la-cuadra/"
+            className="px-5 py-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition"
           >
-            Ladda ner CV
+            Följ mig
           </a>
         </div>
+
         <div className="grid md:grid-cols-3 gap-8">
           <Aiboxen />
         </div>

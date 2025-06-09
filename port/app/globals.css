@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+body {
+  background-color: "bg-gradient-to-br from-slate-100 to-white";
+}
+
 .chatbot-popup {
   position: fixed;
   opacity: 0;
@@ -283,10 +287,6 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-}
-
-body {
-  background-color: #fefdff;
 }
 
 :root {

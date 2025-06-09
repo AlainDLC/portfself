@@ -31,10 +31,10 @@ export const AnimationControls = () => {
               px-4 py-2 rounded-md cursor-pointer text-base transition-colors shadow-md
               ${
                 animation === animName
-                  ? "bg-gradient-to-r from-black via-black to-red-600 font-bold "
+                  ? "bg-gradient-to-r from-black via-black to-red-600 font-bold  hover:text-white "
                   : "bg-red-600 font-normal  "
               }
-              text-white border-none
+              text-white border-none hover:text-red-100
             `}
           >
             {animName}

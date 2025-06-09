@@ -17,7 +17,7 @@ export const Flip = ({ name, title, description, footer, links, stars }) => {
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
       {/* FRONT */}
       <div onClick={() => setIsFlipped(true)} className="cursor-pointer">
-        <Card className="shadow-md">
+        <Card className="shadow-md w-full h-[340px]">
           <CardHeader>
             <CardTitle>
               <p className="ml-1">{name} </p>
@@ -30,16 +30,18 @@ export const Flip = ({ name, title, description, footer, links, stars }) => {
           <CardContent>
             <p className="ml-1">{description} </p>
           </CardContent>
-          <CardFooter>
+          <CardFooter className="flex items-center justify-center space-x-2 ">
             <p>{footer}</p>
-            <p className="ml-2">➡️ lägg till en pulserande animering pil</p>
+            <p className="animate-pulse transform hover:scale-110 transition-transform duration-500">
+              ➡️
+            </p>
           </CardFooter>
         </Card>
       </div>
 
       {/* BACK */}
       <div onClick={() => setIsFlipped(false)} className="cursor-pointer">
-        <Card>
+        <Card className="shadow-md w-[320px] h-[240px]">
           <CardHeader>
             <CardTitle>Länkar från {name}</CardTitle>
           </CardHeader>
@@ -59,8 +61,10 @@ export const Flip = ({ name, title, description, footer, links, stars }) => {
               ))}
             </ul>
           </CardContent>
-          <CardFooter>
-            <p>⬅️</p>
+          <CardFooter className="flex items-center justify-start space-x-2 pl-2">
+            <p className="animate-pulse transform hover:scale-110 transition-transform duration-500">
+              ⬅️
+            </p>
           </CardFooter>
         </Card>
       </div>

@@ -41,15 +41,16 @@ export default function Home() {
             TECH STACK
           </h2>
 
-          <p className="text-sm text-slate-500 max-w-3xl text-center leading-relaxed ">
-            Detta är min teknikstack som jag har specialiserat mig på.
+          <p className="max-w-4xl  text-sm text-slate-500  text-center leading-relaxed">
+            Här presenteras min expertis inom teknikstacken jag behärskar.
             <br />
-            Jag är också anpassningsbar och kan snabbt lära mig nya tekniker som
-            passar just ert företag.
+            Jag är flexibel och lär mig snabbt nya verktyg och tekniker för att
+            möta just era behov.
             <br />
-            En beskrivning visas när du hovrar över någon av skillsen.
+            Hovra gärna över varje skill för att se en kort beskrivning.
             <br />
-            Testa gärna knapparna min personliga avatar beskriver mini me
+            Prova även knapparna — min personliga avatar är en lekfull spegling
+            av mig själv.
           </p>
 
           <div className="flex flex-col md:flex-row items-center max-w-6xl w-full px-6 gap-12">
@@ -76,21 +77,26 @@ export default function Home() {
         </h2>
         <div className="py-2 flex  gap-6">
           <Recards />
-
-          <p className="flex-1 text-xl bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-left w-fit mx-auto ">
+          <p className="max-w-4xl text-xl bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-left">
             Tillsammans tar vi fram din affärsidé och bygger smarta,
-            skräddarsydda tekniska lösningar.
+            skräddarsydda tekniska lösningar som speglar din vision och
+            affärsmodell.
             <br />
-            Jag erbjuder expertis inom LMS för effektiv onboarding och
-            utbildning.
+            Jag erbjuder expertis inom Learning Management Systems (LMS) för att
+            säkerställa effektiv onboarding och kontinuerlig utbildning – både
+            internt och för dina kunder. Genom digitala plattformar skapar vi
+            strukturerad, engagerande och mätbar kompetensutveckling.
             <br />
-            Med avancerad AI som RAG och prompt coaching maximerar vi värdet av
-            din data.
+            Med avancerad AI-teknik, inklusive Retrieval-Augmented Generation
+            (RAG) och prompt coaching, hjälper jag dig att maximera värdet av
+            din data och fatta mer insiktsdrivna beslut. Vi gör din information
+            sökbar, skalbar och användbar – i realtid.
             <br />
-            Jag utvecklar även anpassade chatbotar och AI-agenter som stärker
-            kundrelationer.
-            <br />
-            Låt oss skapa lösningar som gör skillnad för ditt företag.
+            Jag utvecklar även anpassade chatbotar och AI-agenter som förbättrar
+            kundupplevelsen, automatiserar support och skapar starkare
+            relationer genom varje interaktion. Dessa agenter integreras sömlöst
+            med dina system och lär sig kontinuerligt för att ge ännu bättre
+            svar.
           </p>
         </div>
       </section>

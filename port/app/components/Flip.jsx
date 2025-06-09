@@ -41,12 +41,17 @@ export const Flip = ({ name, title, description, footer, links, stars }) => {
 
       {/* BACK */}
       <div onClick={() => setIsFlipped(false)} className="cursor-pointer">
-        <Card className="shadow-md w-[320px] h-[240px]">
+        <Card className="shadow-md w-[320px] h-[340px] ">
+          <img
+            src="/a.png"
+            alt="Bild"
+            className="w-[120px] h-[120px] object-cover mx-auto  "
+          />
           <CardHeader>
-            <CardTitle>Länkar från {name}</CardTitle>
+            <CardTitle className="text-black ">Länkar från {name}</CardTitle>
           </CardHeader>
           <CardContent>
-            <ul className="list-disc pl-4 space-y-2 text-blue-600">
+            <ul className="  list-disc pl-4 space-y-2 text-blue-600">
               {links?.map((link, index) => (
                 <li key={index}>
                   <a
@@ -61,7 +66,7 @@ export const Flip = ({ name, title, description, footer, links, stars }) => {
               ))}
             </ul>
           </CardContent>
-          <CardFooter className="flex items-center justify-start space-x-2 pl-2">
+          <CardFooter className="  mr-2 ">
             <p className="animate-pulse transform hover:scale-110 transition-transform duration-500">
               ⬅️
             </p>

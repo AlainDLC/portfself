@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section id="hero" className="text-left mb-20 ">
+    <section id="hero">
       <div className="bg-[url('/a.png')] bg-cover bg-center bg-no-repeat h-[45vh] flex flex-col p-6  px-33   ">
         <Image
           src="/jag.jpg"
@@ -13,7 +13,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="ml-110 mt-10 text-4xl font-bold bg-gradient-to-r from-red-600 via-black  to-black bg-clip-text text-transparent">
+      <div className="ml-86 mt-10 text-4xl font-bold bg-gradient-to-r from-red-600 via-black  to-black bg-clip-text text-transparent">
         <h1 className="text-4xl md:text-5xl font-bold">Alain De La Cuadra</h1>
         <p className="text-lg  mt-2">
           Fullstack Developer Specializing in Frontend

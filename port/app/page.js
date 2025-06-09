@@ -11,6 +11,7 @@ import { Recards } from "./components/Recards";
 import { AnimationProvider } from "./components/AnimationContext";
 import { Experience3D } from "./components/Experience3D";
 import { AnimationControls } from "./components/AnimationControls";
+import { Projects } from "./components/Projects";
 
 export default function Home() {
   return (
@@ -25,11 +26,11 @@ export default function Home() {
         <h2 className=" py-6 text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center w-fit mx-auto">
           CLONA OCH KÖR PÅ!
         </h2>
-        <p className="text-sm text-slate-500 max-w-3xl text-center leading-relaxed ">
+        <p className="text-sm text-slate-500 max-w-3xl text-center leading-relaxed  ">
           Pusselbitar och Programvara
         </p>
-        <div className="grid md:grid-cols-3 gap-8">
-          lägg i vedio github länk
+        <div className="mt-10">
+          <Projects />
         </div>
       </section>
       <AnimationProvider>
@@ -37,7 +38,7 @@ export default function Home() {
           id="teck"
           className="bg-gradient-to-br from-slate-100 to-white min-h-screen flex flex-col items-center py-12 px-4"
         >
-          <h2 className="mb-8 text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center">
+          <h2 className=" mb-8 text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center">
             TECH STACK
           </h2>
 
@@ -53,7 +54,7 @@ export default function Home() {
             av mig själv.
           </p>
 
-          <div className="flex flex-col md:flex-row items-center max-w-6xl w-full px-6 gap-12">
+          <div className="ml-26 flex flex-col md:flex-row items-center max-w-6xl w-full p-6 gap-10 ">
             <div className="flex-1 flex flex-col justify-center items-center gap-6">
               <Skills />
               <AnimationControls />

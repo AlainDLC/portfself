@@ -7,7 +7,7 @@ import {
 
 export const Skills = () => {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 ">
       {skillsData.map((skill) => (
         <HoverCard key={skill.alt}>
           <HoverCardTrigger className="flex justify-center">

@@ -4,7 +4,7 @@ export const Skill = ({ source, alt, title }) => {
       className="
         flex flex-col items-center justify-center py-4 mt-2
         transition-all duration-300 ease-in-out
-          rounded-xl   hover:scale-110
+          rounded-xl   hover:scale-110 
       "
     >
       <img src={source} alt={alt} className="h-18 w-20  cursor-pointer" />

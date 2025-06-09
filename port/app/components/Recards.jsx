@@ -3,19 +3,16 @@ import { Flip } from "./Flip";
 const recommendations = [
   {
     name: "Daiver y Andrea",
-    title: "Grundare,Dance by Daiver y Andrea",
+    title: "Grundare Dance by Daiver y Andrea",
     description:
       "Alains LMS-lösning har förändrat mitt sätt att undervisa online. Jag kan enkelt ladda upp klasser och följa elevernas utveckling smidigt. #LMS",
     footer: "Magisk plattform!",
     stars: 5,
-    links: [
-      { label: "Youtube", href: "https://www.youtube.com/@DaiveryAndrea" },
-      { label: "LMS", href: "https://www.dancebyda.com/" },
-    ],
+    links: [{ label: "Dancebyda", href: "https://www.dancebyda.com/" }],
   },
   {
-    name: "Hanna Sköld",
-    title: "Senior Systemutvecklare",
+    name: "Hanna Sköld ",
+    title: "Systemutvecklare Volvo Finans",
     description:
       "Alain och jag arbetade i samma team och han bidrog alltid med en positiv stämning i gruppen. Han har stor kunskap och ett genuint intresse för frontend, särskilt React.",
     footer: "Professionell och engagerad!",
@@ -29,7 +26,7 @@ const recommendations = [
   },
   {
     name: "Martin Ekberg",
-    title: "Senior Systemutvecklare",
+    title: "Systemutvecklare Yoin",
     description:
       "Alain har ett stort tekniskt intresse och vill alltid utvecklas. Hans förmåga att hålla stämningen på topp gör varje arbetsdag rolig och produktiv.",
     footer: "Rekommenderar varmt!",

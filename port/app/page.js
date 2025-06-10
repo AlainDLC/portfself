@@ -74,7 +74,7 @@ export default function Home() {
             </div>
 
             <div className="w-72 h-72 md:w-96 md:h-96 ml-0 md:ml-32">
-              <Canvas className="ml-0 md:ml-32">
+              <Canvas className="ml-20 md:ml-32">
                 <ambientLight intensity={3} />
                 <Experience3D />
               </Canvas>
@@ -89,9 +89,9 @@ export default function Home() {
         <h2 className=" py-6 text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center w-fit mx-auto">
           Rekommendationer
         </h2>
-        <div className="py-2 flex  gap-6">
+        <div className="py-2 flex  gap-6 flex-col md:flex-row items-start">
           <Recards />
-          <p className="max-w-4xl text-xl bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-left">
+          <p className="max-w-4xl md:text-xl bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-left  order-last text-md">
             Tillsammans tar vi fram din affärsidé och bygger smarta,
             skräddarsydda tekniska lösningar som speglar din vision och
             affärsmodell.

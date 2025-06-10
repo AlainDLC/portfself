@@ -2,6 +2,20 @@ import { Flip } from "./Flip";
 
 const recommendations = [
   {
+    name: "Martin Ekberg",
+    title: "Systemutvecklare Yoin",
+    description:
+      "Alain har ett stort tekniskt intresse och vill alltid utvecklas. Hans förmåga att hålla stämningen på topp gör varje arbetsdag rolig och produktiv.",
+    footer: "Rekommenderar varmt!",
+    stars: 5,
+    links: [
+      {
+        label: "LinkedIn",
+        href: "https://www.linkedin.com/in/martin-ekberg-089636a9/",
+      },
+    ],
+  },
+  {
     name: "Daiver y Andrea",
     title: "Grundare Dance by Daiver y Andrea",
     description:
@@ -24,20 +38,7 @@ const recommendations = [
       },
     ],
   },
-  {
-    name: "Martin Ekberg",
-    title: "Systemutvecklare Yoin",
-    description:
-      "Alain har ett stort tekniskt intresse och vill alltid utvecklas. Hans förmåga att hålla stämningen på topp gör varje arbetsdag rolig och produktiv.",
-    footer: "Rekommenderar varmt!",
-    stars: 5,
-    links: [
-      {
-        label: "LinkedIn",
-        href: "https://www.linkedin.com/in/martin-ekberg-089636a9/",
-      },
-    ],
-  },
+
   {
     name: "Mikael Ishhanian",
     title: "UX-designer, Freelance",
@@ -50,7 +51,7 @@ const recommendations = [
 ];
 export const Recards = () => {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-2 max-w-[660px] gap-8 ">
+    <div className="grid grid-cols-2 sm:grid-cols-2 gap-8 text-sm md:text-xl">
       {recommendations?.map((rec, index) => (
         <Flip key={index} {...rec} />
       ))}

@@ -11,11 +11,11 @@ import { AnimationProvider } from "./components/AnimationContext";
 import { Experience3D } from "./components/Experience3D";
 import { AnimationControls } from "./components/AnimationControls";
 import { Projects } from "./components/Projects";
-import Image from "next/image";
+import { Copyright, MailIcon, User2Icon } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="flex flex-col  h-screen gap-30">
+    <main className="flex flex-col   gap-30 bg-gradient-to-br from-slate-100 to-white ">
       <Hero />
       <div className="text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center w-fit mx-auto -mt-32">
         <h1 className="text-4xl md:text-5xl font-bold">Alain De La Cuadra</h1>
@@ -67,8 +67,8 @@ export default function Home() {
             av mig själv.
           </p>
 
-          <div className="ml-26 flex flex-col md:flex-row items-center max-w-6xl w-full p-6 gap-10 ">
-            <div className="flex-1 flex flex-col justify-center items-center gap-6">
+          <div className="py-6 flex flex-col md:flex-row items-center   ">
+            <div className="flex flex-col justify-center items-center ">
               <Skills />
               <AnimationControls />
             </div>
@@ -120,22 +120,34 @@ export default function Home() {
         id="contact"
         className="bg-gradient-to-br from-slate-100 to-white  px-6 py-16 text-center"
       >
-        <div className="flex gap-4 mt-6">
+        <div className="flex gap-4 mt-6 ">
           <a
             href="mailto:frontend.alain.dlc@outlook.com"
-            className="px-5 py-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition"
+            className="px-5 py-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition "
           >
-            Kontakta mig
+            <div className="group-hover:animate-bounce  ">
+              <MailIcon />
+            </div>
           </a>
+
+          <div className="flex gap-4 mt-6 group"></div>
           <a
             href="https://www.linkedin.com/in/alain-de-la-cuadra/"
             className="px-5 py-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition"
           >
-            Följ mig
+            <div className="group-hover:animate-bounce   ">
+              <User2Icon />
+            </div>
           </a>
+          <div className="flex-1  items-center mt-3">
+            <p className="flex items-center justify-center gap-x-2 text-center font-bold ">
+              <Copyright className="h-4 w-4 text-red-600 " /> 2025 Alain De La
+              Cuadra
+            </p>
+          </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 ">
           <Aiboxen />
         </div>
       </section>

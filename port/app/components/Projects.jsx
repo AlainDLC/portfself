@@ -9,23 +9,23 @@ import {
 
 export const Projects = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
       {/* Card 1 */}
       <Card>
         <CardHeader>
           <CardTitle>AI Generate Course</CardTitle>
           <CardDescription>
-            Kräver egen API-nyckel – funkar med Gemini, OpenAI, DeepSeek.
+            Kräver egen API-nyckel – funkar med Gemini ,OpenAi.
           </CardDescription>
         </CardHeader>
         <CardContent>
           <img
             src="/Plattform3.png"
             alt="AI Generate Course"
-            className="w-100 h-40 rounded-lg mb-4"
+            className="w-100 h-40 rounded-lg mb-4 hover:scale-103 shadow-md "
           />
           <p className="text-sm text-gray-700 mb-2">
-            Automatiserad kursgenerator – skapa egna AI-drivna utbildningar.
+            Skapa egna AI-drivna utbildningar med Youtube.
           </p>
         </CardContent>
         <CardFooter className="flex flex-col items-start gap-1">
@@ -58,7 +58,7 @@ export const Projects = () => {
           <img
             src="/Plattform2.png"
             alt="Wireframe to Code"
-            className="w-100 h-40 rounded-lg mb-4"
+            className="w-100 h-40 rounded-lg mb-4 hover:scale-103 shadow-md "
           />
           <p className="text-sm text-gray-700 mb-2">
             Testa hur AI tolkar design och genererar färdig kod.
@@ -94,7 +94,7 @@ export const Projects = () => {
           <img
             src="/Plattform.png"
             alt="LMS System"
-            className="w-100 h-40 rounded-lg mb-4"
+            className="w-100 h-40 rounded-lg mb-4 hover:scale-103 shadow-md "
           />
           <p className="text-sm text-gray-700 mb-2">
             Innehåller kurser, inloggning, framstegsspårning och mer.

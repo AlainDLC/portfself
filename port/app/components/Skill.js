@@ -10,7 +10,7 @@ export const Skill = ({ source, alt, title }) => {
       <img
         src={source}
         alt={alt}
-        className=" lg:h-28 lg:w-20 md:h-28 md:w-20 h-18 w-12 p-2 cursor-pointer  mr-10"
+        className=" lg:h-28 lg:w-24 md:h-28 md:w-15 h-25 w-28 p-2 lg:p-2 cursor-pointer  "
       />
       <p className="text-center text-black font-semibold">{title}</p>
     </div>

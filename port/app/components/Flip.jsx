@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 import {
   Card,
-  CardAction,
   CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const Flip = ({ name, title, description, footer, links, stars }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -30,10 +30,10 @@ export const Flip = ({ name, title, description, footer, links, stars }) => {
           <CardContent>
             <p className="ml-1">{description} </p>
           </CardContent>
-          <CardFooter className="flex items-center justify-center space-x-2 ">
+          <CardFooter className="flex items-center justify-center space-x-2  group">
             <p>{footer}</p>
-            <p className="animate-pulse transform hover:scale-110 transition-transform duration-500">
-              ➡️
+            <p className="group-hover:animate-bounce ">
+              <ArrowRight className="text-red-400 h-4 w-4 hover:text-red-600" />
             </p>
           </CardFooter>
         </Card>
@@ -66,9 +66,9 @@ export const Flip = ({ name, title, description, footer, links, stars }) => {
               ))}
             </ul>
           </CardContent>
-          <CardFooter className="  mr-2 ">
-            <p className="animate-pulse transform hover:scale-110 transition-transform duration-500">
-              ⬅️
+          <CardFooter className="mr-1  group flex gap-3  p-3  ">
+            <p className="group-hover:animate-bounce ">
+              <ArrowLeft className="text-red-400 h-4 w-4 hover:text-red-600" />
             </p>
           </CardFooter>
         </Card>

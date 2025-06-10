@@ -41,30 +41,32 @@ export const Flip = ({ name, title, description, footer, links, stars }) => {
 
       {/* BACK */}
       <div onClick={() => setIsFlipped(false)} className="cursor-pointer">
-        <Card className="shadow-md md:w-[320px] md:h-[340px]  ">
+        <Card className="shadow-md md:w-[320px] md:h-[340px]  lg:w-[420px] w-[180px]">
           <img
             src="/a.png"
             alt="Bild"
             className="w-[120px] h-[120px] object-cover mx-auto  "
           />
           <CardHeader>
-            <CardTitle className="text-black ">Länkar från {name}</CardTitle>
+            <CardTitle className="text-black text-center ">
+              Länkar från {name}
+            </CardTitle>
           </CardHeader>
           <CardContent>
-            <ul className="  list-disc pl-4 space-y-2 text-blue-600">
+            <span className="  list-disc pl-4 space-y-2 text-blue-600 text-center">
               {links?.map((link, index) => (
-                <li key={index}>
+                <p key={index} className="text-center">
                   <a
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:underline"
+                    className="hover:underline "
                   >
                     {link.label}
                   </a>
-                </li>
+                </p>
               ))}
-            </ul>
+            </span>
           </CardContent>
           <CardFooter className="mr-1  group flex gap-3  p-3  ">
             <p className="group-hover:animate-bounce ">

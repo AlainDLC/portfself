@@ -83,7 +83,7 @@ export const Aiboxen = () => {
         <div className="chat-header">
           <div className="header-info">
             <ChatbotIcon />
-            <h2 className="logo-text">Ai-agent</h2>
+            <h2 className="logo-text">🕵️ Fråga mig </h2>
           </div>
           <button
             onClick={() => setShowChatbot((prev) => !prev)}
@@ -99,7 +99,7 @@ export const Aiboxen = () => {
           <div className="message bot-message ">
             <ChatbotIcon />
             <p className="message-text">
-              👋 Välkommen! Behöver du hjälp med att växa eller förbättra din
+              Välkommen! Behöver du hjälp med att växa eller förbättra din
               verksamhet med expertishjälp inom frontend- eller
               fullstackutveckling?
             </p>

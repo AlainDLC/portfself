@@ -115,16 +115,17 @@ body {
   word-wrap: break-word;
   white-space: pre-line;
   font-size: 0.9rem;
+  color: #fff;
 }
 
 .chat-body .bot-message .message-text {
-  background: #f4f0ff;
+  background: #dd1717;
   border-radius: 13px 13px 13px 3px;
 }
 
 .chat-body .user-message .message-text {
   color: #fff;
-  background: #6d4fc2;
+  background: #070707;
   border-radius: 13px 13px 3px 13px;
 }
 

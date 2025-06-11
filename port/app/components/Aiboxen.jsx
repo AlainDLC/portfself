@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { ChatbotIcon } from "./ChatbotIcon";
-import { ChatForm } from "./CHatForm";
+import { ChatForm } from "./ChatForm";
 import { ChatMessage } from "./ChatMessage";
 import { companyInfo } from "./companyinfo";
 import { ArrowDown, AwardIcon, X } from "lucide-react";

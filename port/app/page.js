@@ -15,7 +15,7 @@ import { Copyright, MailIcon, User2Icon } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="flex flex-col   bg-gradient-to-br from-slate-100 to-white  ">
+    <main className="">
       <Hero />
       <div className=" text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center w-fit mx-auto mt-1">
         <h1 className="text-4xl md:text-5xl font-bold">Alain De La Cuadra</h1>

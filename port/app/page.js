@@ -86,12 +86,12 @@ export default function Home() {
         id="recommends"
         className="bg-gradient-to-br from-slate-100 to-white min-h-screen flex flex-col items-center py-12 px-4"
       >
-        <h2 className=" py-6 text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center w-fit mx-auto">
+        <h2 className=" py-6  text-3xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center w-fit mx-auto">
           Rekommendationer
         </h2>
-        <div className="py-2 flex  gap-6 flex-col md:flex-row items-start">
+        <div className="py-2 flex  gap-20 flex-col md:flex-row items-start">
           <Recards />
-          <p className="max-w-4xl md:text-xl bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-left  order-last text-md">
+          <p className="max-w-3xl xl:text-wm md:text-xl bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-left  order-last text-md">
             Tillsammans tar vi fram din affärsidé och bygger smarta,
             skräddarsydda tekniska lösningar som speglar din vision och
             affärsmodell.

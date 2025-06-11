@@ -83,7 +83,7 @@ export const Aiboxen = () => {
         <div className="chat-header">
           <div className="header-info">
             <ChatbotIcon />
-            <h2 className="logo-text">🕵️ Fråga mig </h2>
+            <h2 className="logo-text">AI AGENT </h2>
           </div>
           <button
             onClick={() => setShowChatbot((prev) => !prev)}

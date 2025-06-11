@@ -15,9 +15,9 @@ import { Copyright, MailIcon, User2Icon } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="flex flex-col   gap-30 bg-gradient-to-br from-slate-100 to-white ">
+    <main className="flex flex-col   bg-gradient-to-br from-slate-100 to-white  ">
       <Hero />
-      <div className="text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center w-fit mx-auto -mt-32">
+      <div className=" text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center w-fit mx-auto mt-1">
         <h1 className="text-4xl md:text-5xl font-bold">Alain De La Cuadra</h1>
         <p className="text-lg mt-2">
           Fullstack Developer Specializing in Frontend
@@ -118,9 +118,9 @@ export default function Home() {
       {/* 3. Kontakt Section */}
       <section
         id="contact"
-        className="bg-gradient-to-br from-slate-100 to-white  px-6 py-16 text-center"
+        className="bg-gradient-to-br from-slate-100 to-white  px-6 py-6 text-center"
       >
-        <div className="flex gap-4 mt-6 ">
+        <div className="flex gap-2  ">
           <a
             href="mailto:frontend.alain.dlc@outlook.com"
             className="px-5 py-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition "
@@ -147,9 +147,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 ">
-          <Aiboxen />
-        </div>
+        <Aiboxen />
       </section>
     </main>
   );

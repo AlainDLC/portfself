@@ -28,7 +28,7 @@ const recommendations = [
     name: "Hanna Sköld ",
     title: "Systemutvecklare Volvo Finans",
     description:
-      "Alain och jag arbetade i samma team och han bidrog alltid med en positiv stämning i gruppen. Han har stor kunskap och ett genuint intresse för frontend, särskilt React.",
+      "Alain och jag arbetade i samma team och han bidrog alltid med en positiv stämning i gruppen. Han har stor kunskap särskilt i React.",
     footer: "Professionell och engagerad!",
     stars: 5,
     links: [
@@ -51,7 +51,7 @@ const recommendations = [
 ];
 export const Recards = () => {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-2 gap-8 text-sm md:text-xl">
+    <div className="grid grid-cols-2 sm:grid-cols-2 gap-8 text-sm md:text-md">
       {recommendations?.map((rec, index) => (
         <Flip key={index} {...rec} />
       ))}

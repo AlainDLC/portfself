@@ -120,12 +120,12 @@ export default function Home() {
         {/* 3. Kontakt Section */}
         <section
           id="contact"
-          className="bg-gradient-to-br from-slate-100 to-white  px-6 py-6 text-center"
+          className="bg-gradient-to-br from-slate-100 to-white  px-2 text-center"
         >
-          <div className="flex gap-2  ">
+          <div className="flex gap-1  ">
             <a
               href="mailto:frontend.alain.dlc@outlook.com"
-              className="px-5 py-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition "
+              className="px-3 py-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition "
             >
               <div className="group-hover:animate-bounce  ">
                 <MailIcon />
@@ -135,7 +135,7 @@ export default function Home() {
             <div className="flex gap-4 mt-6 group"></div>
             <a
               href="https://www.linkedin.com/in/alain-de-la-cuadra/"
-              className="px-5 py-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition"
+              className="px-3 py-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition "
             >
               <div className="group-hover:animate-bounce   ">
                 <User2Icon />

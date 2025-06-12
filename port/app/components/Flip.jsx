@@ -17,7 +17,7 @@ export const Flip = ({ name, title, description, footer, links, stars }) => {
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
       {/* FRONT */}
       <div onClick={() => setIsFlipped(true)} className="cursor-pointer">
-        <Card className="relative shadow-md w-auto md:h-[340px] h-[420px] md:w-[380px] xl:w-[310px] xl:h-[340px]">
+        <Card className="hover:shadow-xl relative shadow-sm w-auto md:h-[340px] h-[420px] md:w-[380px] xl:w-[310px] xl:h-[340px]">
           <CardHeader>
             <CardTitle>
               <p className="ml-1">{name} </p>

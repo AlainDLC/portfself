@@ -16,7 +16,7 @@ import { Copyright, MailIcon, User2Icon } from "lucide-react";
 export default function Home() {
   return (
     <div className="overflow-y-scroll no-scrollbar overflow-hidden md:overflow-hidden">
-      <main className=" ">
+      <main className="bg-gradient-to-br from-slate-100 to-white min-h-screen">
         <Hero />
         <div className=" text-4xl font-bold bg-gradient-to-r from-red-600 via-black to-black bg-clip-text text-transparent text-center w-fit mx-auto mt-1">
           <h1 className="text-4xl md:text-5xl font-bold">Alain De La Cuadra</h1>

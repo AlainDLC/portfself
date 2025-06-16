@@ -13,8 +13,12 @@
   }
 }
 
-body {
-  background-color: "bg-gradient-to-br from-slate-100 to-white";
+html,
+body,
+#__next {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 .chatbot-popup {

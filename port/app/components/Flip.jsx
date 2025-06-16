@@ -8,7 +8,15 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import {
+  ArrowDownCircle,
+  ArrowDownRight,
+  ArrowLeft,
+  ArrowLeftCircle,
+  ArrowRight,
+  ArrowRightCircle,
+  ArrowUp,
+} from "lucide-react";
 
 export const Flip = ({ name, title, description, footer, links, stars }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -35,9 +43,9 @@ export const Flip = ({ name, title, description, footer, links, stars }) => {
           </CardFooter>
 
           {/* ArrowRight längst ner till höger */}
-          <div className="absolute bottom-3 right-3 group">
-            <p className="group-hover:animate-bounce">
-              <ArrowRight className="text-red-400 h-6 w-6 hover:text-red-600" />
+          <div className="absolute bottom-3 right-3 group rotate-120 hover:rotate-180">
+            <p className="group-hover:animate-bounce  ">
+              <ArrowLeft className="text-red-400 h-6 w-6 hover:text-red-600" />
             </p>
           </div>
         </Card>
@@ -75,7 +83,7 @@ export const Flip = ({ name, title, description, footer, links, stars }) => {
 
           {/* ArrowLeft längst ner till vänster */}
           <div className="absolute bottom-3 left-3 group">
-            <p className="group-hover:animate-bounce">
+            <p className="group-hover:animate-bounce rotate-45 hover:rotate-0">
               <ArrowLeft className="text-red-400 h-6 w-6 hover:text-red-600" />
             </p>
           </div>
